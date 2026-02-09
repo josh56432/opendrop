@@ -44,7 +44,7 @@ Tested on Debian 13 (Trixie) kernel 6.12.63+deb13
 
        sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libffi-dev liblzma-dev tk-dev curl git cmake python3-opencv gobject-introspection libgirepository1.0-dev gir1.2-glib.2.0 pkg-config libsundials_core-7
 
-#. Install pyenv (for easy python3.10 use without downgrading system python)::
+#. Install pyenv (for python3.10 use without downgrading system python)::
 
        curl https://pyenv.run | bash
 
