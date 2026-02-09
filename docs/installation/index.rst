@@ -44,11 +44,11 @@ Tested on Debian 13 (Trixie) kernel 6.12.63+deb13
 
        sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libffi-dev liblzma-dev tk-dev curl git wget cmake python3-opencv gobject-introspection libgirepository1.0-dev gir1.2-glib.2.0 pkg-config libsundials_core-7
 
-#. Install pyenv (for easy python3.10 use without downgrading system python)
+#. Install pyenv (for easy python3.10 use without downgrading system python)::
 
        curl https://pyenv.run | bash
 
-#. Add pyenv to PATH; paste the following in bashrc via:
+#. Add pyenv to PATH; paste the following in bashrc::
 
       sudo tee -a ~/.bashrc <<EOF
       export PYENV_ROOT="$HOME/.pyenv"
@@ -56,33 +56,33 @@ Tested on Debian 13 (Trixie) kernel 6.12.63+deb13
       eval "$(pyenv init - bash)"
       EOF
 
-#. Reload source
+#. Reload source::
 
       source ~/.bashrc
 
-#. Install Python3.10.14 into pyenv:
+#. Install Python3.10.14 into pyenv::
 
       pyenv install 3.10.14
 
-#. Create venv and source into it
+#. Create venv and source into it::
 
       pyenv local 3.10.14
       python -m venv VENV_DIR
       source VENV_DIR/bin/activate
 
-#. Install more dependencies 
+#. Install more dependencies::
 
       pip install --no-cache-dir setuptools wheel pycairo PyGObject
 
-#. Install opendrop from the github
+#. Install opendrop from the github::
 
       pip install --no-cache-dir git+https://github.com/jdber1/opendrop.git
 
-#. Return to bashrc source
+#. Return to bashrc source::
 
       source ~/.bashrc
 
-#. Run app with:
+#. Run app with::
 
       VENV_DIR/bin/python -m opendrop
 
